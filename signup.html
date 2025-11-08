@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to sign up!!</h1>
+    <form>
+        <label for="music">행복 볼륨 조절</label>
+        <input type="range" id="music" min="0" max="100" step="1" value="10" oninput="document.getElementById('selected-value').innerText=this.value"><span id="selected-value">20</span>
+    </form>
+  <form>
+    <fieldset>
+    <legned>사용자 정보</legned>
+    <ul>
+     <li>
+    <label for="user-id">아이디(6자 이상)</label>
+    <input type="text" id="user-id"> 
+    </li>
+    <li>
+    <label for="pw1">비밀번호(영문,숫자,특수문자 조합)</label>
+    <input type="password" id="pw1">
+    </li>
+    <li>
+        <label for="pw2">비밀번호 확인</label>
+        <input type="password" id="pw2">
+    </li>
+    <li>
+    <label for="user-tel">연락처</label>
+    <input type="tel" id="user-tel">
+    </li>
+    <li>
+    <label for="user-email">이메일</label>
+    <input type="email" id="user-email">
+    </li>
+    </ul>
+    </fieldset>
+    <fieldset>
+        <legend>트렌디한 사람이 될 것인지</legend>
+        <ul>
+        <li>
+        <input type="radio" name="mailing" id="mailing_y" value="mailing_y" checked>
+        <label for="mailing_y">트렌디한 정보를 받겠습니다</label>
+        </li>
+        <li>
+        <input type="radio" name="mailing" id="mailing_n" value="mailing_n">
+        <label for="mailing_n">그냥 문찐이 될게요</label>
+        </li>
+        </ul>
+        </fieldset>
+        <div>
+            <input type="submit" value="가입하기">
+        </div>
+  </form>
+</body>
+</html>
